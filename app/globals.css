@@ -1,26 +1,31 @@
 @import "tailwindcss";
+/* Enable Dark Modes */
+@custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Light Mode Colors */
+  --color-light-bg: #FFFBF0;
+  --color-light-card: #FFFFFF;
+  --color-light-hover: #A8DADC;
+  --color-light-text: #708090;
+  --color-light-dark-text: #333333;
+  --color-light-button: #F4A261;
+  /* Dark Mode Colors */
+  --color-dark-bg: #121212;
+  --color-dark-card: #1A2A44;
+  --color-dark-hover: #4C6B6B;
+  --color-dark-text: #B0B0B0;
+  --color-dark-button: #D4AF37;
+  /* Fonts */
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-poppins: "Poppins",  "sans-serif";
+  --font-inter: "Inter","sans-serif";
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.seconderyHeading {
+  @apply text-[min(7vw,36px)] font-montserrat text-light-dark-text dark:text-dark-text font-semibold
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.profileDescription{
+  @apply text-[16px] md:text-[20px] font-inter text-light-dark-text dark:text-dark-text 
 }
