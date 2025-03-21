@@ -37,7 +37,7 @@ const Contact = () => {
                     </label>
                     <textarea
                         id="message"
-                        rows="3"
+                        rows={3}
                         className="w-full p-3 rounded bg-light-card dark:bg-dark-card"
                     ></textarea>
                 </div>
