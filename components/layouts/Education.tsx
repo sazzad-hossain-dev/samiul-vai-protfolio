@@ -1,7 +1,7 @@
 "use client";
 import { Timeline } from "@/components/ui/timeline";
 
-export function Education() {
+export default function Education() {
     const data = [
         {
             title: "Master of Science in Computer Science",

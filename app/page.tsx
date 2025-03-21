@@ -1,5 +1,6 @@
 "use client";
-import { Education, TimelineDemo } from "@/components/layouts/Education";
+
+import Education from "@/components/layouts/Education";
 import Contact from "@/components/ui/Contact";
 import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
