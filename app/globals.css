@@ -29,3 +29,15 @@
 .profileDescription{
   @apply text-[16px] md:text-[20px] font-inter text-light-dark-text dark:text-dark-text 
 }
+.glowing {
+  box-shadow: 0 0 15px rgba(173, 216, 230, 1); /* Light blue glow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.glow-line {
+  box-shadow: 0 0 8px rgba(100, 149, 237, 0.7), 0 0 16px rgba(100, 149, 237, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
