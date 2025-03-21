@@ -1,6 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+
 export const navLinks = [
     {
         title: "Home",
